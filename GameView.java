@@ -1,7 +1,7 @@
 package com.course.study.lesson_2;
 
 class GameView {
-    static final String START_GAME = "Hello! In this game you have to guess the number!";
+    static final String START_GAME = "Hello! This game you have to guess the number!";
     static final String GUESS = "Congrats!!! You guess)";
     static final String MORE = "The secret number is more than yours";
     static final String LESS = "The secret number is less than yours";
