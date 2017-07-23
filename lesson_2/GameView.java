@@ -1,4 +1,4 @@
-package com.course.study.lesson_2;
+package com.course.study.lesson_2.lesson_2;
 
 class GameView {
     static final String START_GAME = "Hello! Over this game you have to guess the number!";
