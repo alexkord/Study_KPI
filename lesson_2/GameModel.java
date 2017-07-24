@@ -1,7 +1,7 @@
 package com.course.study.lesson_2.lesson_2;
 class GameModel {
     private int secretRand;
-    final static int RANd_MIN = 0;
+    final static int RAND_MIN = 0;
     final static int RAND_MAX = 100;
     private int guessNumber;
 
