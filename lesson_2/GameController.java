@@ -1,4 +1,3 @@
-package com.course.study.lesson_2.lesson_2;
 
 import java.util.Scanner;
 
@@ -42,9 +41,5 @@ class GameController {
                 GameView.print(GameView.MORE);
             }
         }
-    }
-
-    public void checkNumber() {
-
     }
 }

@@ -1,4 +1,4 @@
-package com.course.study.lesson_2.lesson_2;
+
 class GameModel {
     private int secretRand;
     final static int RAND_MIN = 0;
