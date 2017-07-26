@@ -1,4 +1,4 @@
-package lesson_2;
+package ua.kpi.lesson_2;
 
 import java.util.Scanner;
 
@@ -18,8 +18,7 @@ class GameController {
     }
 
     public void setupGame(Scanner sc) {
-        gameView.print(GameView.START_GAME);
-        GameView.print(GameView.ENTER_FIRST_RANGE);
+        gameView.print(GameView.START_GAME, GameView.ENTER_FIRST_RANGE);
         int start = sc.nextInt();
         gameView.print(GameView.ENTER_LAST_RANGE);
         int end = sc.nextInt();

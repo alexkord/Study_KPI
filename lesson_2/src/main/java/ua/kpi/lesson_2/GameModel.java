@@ -1,5 +1,5 @@
-package lesson_2;
-class GameModel {
+package ua.kpi.lesson_2;
+public class GameModel {
     private int secretRand;
     final static int RAND_MIN = 0;
     final static int RAND_MAX = 100;
