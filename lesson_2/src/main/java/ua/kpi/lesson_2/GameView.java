@@ -1,5 +1,5 @@
 package ua.kpi.lesson_2;
-class GameView {
+public class GameView {
     static final String START_GAME = "Hello! Over this game you have to guess the number!";
     static final String GUESS = "Congrats!!! You guess)";
     static final String MORE = "The secret number is more than yours";
