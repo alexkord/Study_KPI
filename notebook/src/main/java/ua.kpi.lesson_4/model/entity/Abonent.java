@@ -9,6 +9,11 @@ public class Abonent {
     private String homePhone, mobilePhone1, mobPhone2, email, skype;
     private Address address;
 
+    public Abonent(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Abonent(String firstName, String lastName, String patronymicName, String nickName, String comment, Group group, String homePhone, String mobilePhone1, String mobPhone2, String email, String skype, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,6 +27,10 @@ public class Abonent {
         this.email = email;
         this.skype = skype;
         this.address = address;
+    }
+
+    public String shortInfo() {
+        return lastName + " " + firstName.charAt(0) + ".";
     }
 
     @Override
