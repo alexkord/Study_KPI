@@ -8,12 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flower_shop" />
         <module name="lesson_2" />
-        <module name="Study_KPI" />
+        <module name="notebook" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flower_shop" target="1.5" />
       <module name="lesson_2" target="1.5" />
+      <module name="notebook" target="1.5" />
       <module name="Study_KPI" target="1.5" />
     </bytecodeTargetLevel>
   </component>
