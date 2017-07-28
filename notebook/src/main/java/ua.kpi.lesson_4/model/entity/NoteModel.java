@@ -9,5 +9,7 @@ public class NoteModel {
         return records;
     }
 
-
+    public void setRecords(List<Record> records) {
+        this.records = records;
+    }
 }

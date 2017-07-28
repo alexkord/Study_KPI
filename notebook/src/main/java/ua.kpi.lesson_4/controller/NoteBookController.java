@@ -16,9 +16,9 @@ public class NoteBookController {
 
     public void startRecord() {
         Scanner sc = new Scanner(System.in);
+        createRecord(sc);
     }
 
     private void createRecord(Scanner sc) {
-
     }
 }

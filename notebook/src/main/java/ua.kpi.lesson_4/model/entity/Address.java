@@ -1,10 +1,10 @@
 package ua.kpi.lesson_4.model.entity;
 
 public class Address {
-    private int index, numberOfBuilding, apartmentNumber;
+    private String index, numberOfBuilding, apartmentNumber;
     private String city, street;
 
-    public Address(int index, int numberOfBuilding, int apartmentNumber, String city, String street) {
+    public Address(String index, String numberOfBuilding, String apartmentNumber, String city, String street) {
         this.index = index;
         this.numberOfBuilding = numberOfBuilding;
         this.apartmentNumber = apartmentNumber;

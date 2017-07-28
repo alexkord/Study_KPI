@@ -6,4 +6,8 @@ public class Record {
     private Abonent abonent;
     private Date dateOfCreate;
     private Date lastChangeDate;
+
+    public void createAbonent() {
+
+    }
 }

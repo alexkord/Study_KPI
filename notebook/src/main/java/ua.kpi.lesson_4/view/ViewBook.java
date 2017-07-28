@@ -21,6 +21,8 @@ public class ViewBook {
     public static final String ENTER_STREET = "Enter street: ";
     public static final String ENTER_BUILDING = "Enter building number: ";
     public static final String ENTER_APARTMENT = "Enter apartment number: ";
+    //incorrect input
+    public static final String INCORRECT_INPUT = "Incorrect input! Try again...";
 
     public static void print(String... messages) {
         for (String s : messages) {
