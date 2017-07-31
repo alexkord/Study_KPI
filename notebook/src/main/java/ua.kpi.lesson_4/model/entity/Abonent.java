@@ -14,7 +14,9 @@ public class Abonent {
         this.lastName = lastName;
     }
 
-    public Abonent(String firstName, String lastName, String patronymicName, String nickName, String comment, Group group, String homePhone, String mobilePhone1, String mobPhone2, String email, String skype, Address address) {
+    public Abonent(String firstName, String lastName, String patronymicName,
+                   String nickName, String comment, Group group, String homePhone,
+                   String mobilePhone1, String mobPhone2, String email, String skype, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.patronymicName = patronymicName;
@@ -29,7 +31,7 @@ public class Abonent {
         this.address = address;
     }
 
-    public String shortInfo() {
+    public String shortName() {
         return lastName + " " + firstName.charAt(0) + ".";
     }
 

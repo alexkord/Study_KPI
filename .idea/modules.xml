@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Study_KPI.iml" filepath="$PROJECT_DIR$/Study_KPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/flower_shop/flower_shop.iml" filepath="$PROJECT_DIR$/flower_shop/flower_shop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_2/lesson_2.iml" filepath="$PROJECT_DIR$/lesson_2/lesson_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guess_game/guess_game.iml" filepath="$PROJECT_DIR$/guess_game/guess_game.iml" />
       <module fileurl="file://$PROJECT_DIR$/notebook/notebook.iml" filepath="$PROJECT_DIR$/notebook/notebook.iml" />
     </modules>
   </component>

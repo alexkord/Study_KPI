@@ -6,6 +6,8 @@ public class ViewBook {
     public static final String ENTER_FIRSTNAME = "Enter first name: ";
     public static final String ENTER_PATRONYMICNAME = "Enter patronymic name: ";
     public static final String ENTER_NICKNAME = "Enter nick name: ";
+    //group input
+    public static final String ENTER_GROUP = "Enter group: ";
     //comment input
     public static final String ENTER_COMMENT = "Enter comment: ";
     //phones input

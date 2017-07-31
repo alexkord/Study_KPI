@@ -20,5 +20,11 @@ public class NoteBookController {
     }
 
     private void createRecord(Scanner sc) {
+        ViewBook.print(ViewBook.ENTER_FIRSTNAME);
+        ViewBook.print(ViewBook.ENTER_LASTNAME);
+        ViewBook.print(ViewBook.ENTER_PATRONYMICNAME);
+        ViewBook.print(ViewBook.ENTER_NICKNAME);
+        ViewBook.print(ViewBook.ENTER_GROUP);
+        ViewBook.print(ViewBook.ENTER_NICKNAME);
     }
 }
