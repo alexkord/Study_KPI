@@ -31,4 +31,16 @@ public class Bouquet {
         this.volume = volume;
     }
 
+    @Override
+    public String toString() {
+        return "Bouquet{" +
+                "flowers=" + flowers +
+                ", accessory=" + accessory +
+                ", cost=" + cost +
+                ", event=" + event +
+                ", freshness=" + freshness +
+                ", stem=" + stem +
+                ", volume=" + volume +
+                '}';
+    }
 }

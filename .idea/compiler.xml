@@ -13,7 +13,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="flower_shop" target="1.5" />
+      <module name="flower_shop" target="1.7" />
       <module name="guess_game" target="1.5" />
       <module name="lesson_2" target="1.5" />
       <module name="notebook" target="1.5" />
