@@ -31,7 +31,7 @@ public class ShopController {
         Scanner scanner = new Scanner(System.in);
         List<Herb> herbs = new ArrayList<>();
         int i = 0;
-        while (i != 1) {
+        while (i != ShopModel.COUNT_OF_HERBS) {
             herbs.add(getHerbFactory(scanner));
             i++;
         }
