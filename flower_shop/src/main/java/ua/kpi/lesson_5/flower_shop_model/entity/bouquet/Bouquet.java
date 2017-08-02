@@ -17,7 +17,7 @@ public class Bouquet {
     private Stem stem;
     private Volume volume;
 
-    public Bouquet(List<? extends Herb> flowers) {
+    public Bouquet(List<Herb> flowers) {
         this.flowers = flowers;
         setAccessory(Accessory.BASIS);
         setCost(Cost.CHEAP);
@@ -27,7 +27,7 @@ public class Bouquet {
         setVolume(Volume.LARGE);
     }
 
-    public Bouquet(List<? extends Herb> flowers, Accessory accessory, Cost cost, Event event, Freshness freshness, Stem stem, Volume volume) {
+    public Bouquet(List<Herb> flowers, Accessory accessory, Cost cost, Event event, Freshness freshness, Stem stem, Volume volume) {
         this.flowers = flowers;
         this.accessory = accessory;
         this.cost = cost;

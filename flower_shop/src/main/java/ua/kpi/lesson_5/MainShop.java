@@ -7,6 +7,5 @@ import ua.kpi.lesson_5.view_shop.ViewFlowerShop;
 public class MainShop {
     public static void main(String[] args) {
         new ShopController(new ShopModel(), new ViewFlowerShop()).start();
-
     }
 }

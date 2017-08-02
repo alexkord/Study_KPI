@@ -20,7 +20,7 @@ public class ShopController {
 
     public void start() {
         shopModel.setBouquet(createBouquet());
-        viewFlowerShop.print(shopModel.getBouquet().toString());
+        ViewFlowerShop.print(shopModel.getBouquet().toString());
     }
 
     private Bouquet createBouquet() {
@@ -28,19 +28,20 @@ public class ShopController {
     }
 
     private List<Herb> getHerbs() {
-        viewFlowerShop.print(ViewFlowerShop.MESSAGE);
         Scanner scanner = new Scanner(System.in);
         List<Herb> herbs = new ArrayList<>();
-        for (int i = 0; i < herbs.size(); i++) {
+        int i = 0;
+        while (i != 1) {
             herbs.add(getHerbFactory(scanner));
+            i++;
         }
         return herbs;
     }
 
     private Herb getHerbFactory(Scanner scanner) {
-        viewFlowerShop.print(viewFlowerShop.TYPE_OF_HERB);
+        ViewFlowerShop.print(ViewFlowerShop.TYPE_OF_HERB);
         String herbType = scanner.next();
-        viewFlowerShop.print(viewFlowerShop.NAME_OF_HERB);
+        ViewFlowerShop.print(ViewFlowerShop.NAME_OF_HERB);
         String herbName = scanner.next();
         if (herbType.equalsIgnoreCase("Branch")) {
             return new Branch(herbName);

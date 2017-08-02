@@ -15,4 +15,11 @@ public class Flower implements Herb {
     public Herb createHerb(String name) {
         return new Flower(name);
     }
+
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
