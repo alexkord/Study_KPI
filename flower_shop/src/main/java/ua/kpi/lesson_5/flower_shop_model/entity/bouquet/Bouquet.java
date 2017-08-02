@@ -19,6 +19,12 @@ public class Bouquet {
 
     public Bouquet(List<? extends Herb> flowers) {
         this.flowers = flowers;
+        setAccessory(Accessory.BASIS);
+        setCost(Cost.CHEAP);
+        setEvent(Event.ALL);
+        setFreshness(Freshness.FRESHEST);
+        setStem(Stem.SHORT_STEM);
+        setVolume(Volume.LARGE);
     }
 
     public Bouquet(List<? extends Herb> flowers, Accessory accessory, Cost cost, Event event, Freshness freshness, Stem stem, Volume volume) {
@@ -31,16 +37,40 @@ public class Bouquet {
         this.volume = volume;
     }
 
+    public void setAccessory(Accessory accessory) {
+        this.accessory = accessory;
+    }
+
+    public void setCost(Cost cost) {
+        this.cost = cost;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
+    public void setFreshness(Freshness freshness) {
+        this.freshness = freshness;
+    }
+
+    public void setStem(Stem stem) {
+        this.stem = stem;
+    }
+
+    public void setVolume(Volume volume) {
+        this.volume = volume;
+    }
+
     @Override
     public String toString() {
         return "Bouquet{" +
-                "flowers=" + flowers +
-                ", accessory=" + accessory +
-                ", cost=" + cost +
-                ", event=" + event +
-                ", freshness=" + freshness +
-                ", stem=" + stem +
-                ", volume=" + volume +
+                "flowers = " + flowers +
+                ", accessory = " + accessory +
+                ", cost = " + cost +
+                ", event = " + event +
+                ", freshness = " + freshness +
+                ", stem = " + stem +
+                ", volume = " + volume +
                 '}';
     }
 }

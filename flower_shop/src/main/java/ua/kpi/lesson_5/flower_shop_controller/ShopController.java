@@ -20,14 +20,14 @@ public class ShopController {
 
     public void start() {
         shopModel.setBouquet(createBouquet());
+        viewFlowerShop.print(shopModel.getBouquet().toString());
     }
 
-    public Bouquet createBouquet() {
-        Bouquet bouquet = new Bouquet(getHerbs());
-        return bouquet;
+    private Bouquet createBouquet() {
+        return new Bouquet(getHerbs());
     }
 
-    public List<Herb> getHerbs() {
+    private List<Herb> getHerbs() {
         viewFlowerShop.print(ViewFlowerShop.MESSAGE);
         Scanner scanner = new Scanner(System.in);
         List<Herb> herbs = new ArrayList<>();
@@ -53,7 +53,7 @@ public class ShopController {
         } else if (herbType.equalsIgnoreCase("Shrub")) {
             return new Shrub(herbName);
         } else if (herbType.equalsIgnoreCase("Single Blossom")) {
-
+            return new SingleBlossomFlower(herbName);
         }
         return null;
     }

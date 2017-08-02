@@ -11,4 +11,11 @@ public class ShopModel {
     public void setBouquet(Bouquet bouquet) {
         this.bouquet = bouquet;
     }
+
+    @Override
+    public String toString() {
+        return "ShopModel{" +
+                "bouquet=" + bouquet +
+                '}';
+    }
 }
