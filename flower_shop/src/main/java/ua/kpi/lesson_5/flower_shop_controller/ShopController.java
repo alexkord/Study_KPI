@@ -32,13 +32,17 @@ public class ShopController {
         List<Herb> herbs = new ArrayList<>();
         int i = 0;
         while (i != ShopModel.COUNT_OF_HERBS) {
-            herbs.add(getHerbFactory(scanner));
+            try {
+                herbs.add(getHerbFactory(scanner));
+            } catch (FlowerShopException e) {
+                e.printStackTrace();
+            }
             i++;
         }
         return herbs;
     }
 
-    private Herb getHerbFactory(Scanner scanner) {
+    private Herb getHerbFactory(Scanner scanner) throws FlowerShopException {
         ViewFlowerShop.print(ViewFlowerShop.TYPE_OF_HERB);
         String herbType = scanner.next();
         ViewFlowerShop.print(ViewFlowerShop.NAME_OF_HERB);
@@ -55,8 +59,9 @@ public class ShopController {
             return new Shrub(herbName);
         } else if (herbType.equalsIgnoreCase("Single Blossom")) {
             return new SingleBlossomFlower(herbName);
+        } else {
+            throw new FlowerShopException("Enter correct herb");
         }
-        return null;
     }
 
 }
