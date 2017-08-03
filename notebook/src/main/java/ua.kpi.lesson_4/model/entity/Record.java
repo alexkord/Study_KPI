@@ -7,7 +7,4 @@ public class Record {
     private Date dateOfCreate;
     private Date lastChangeDate;
 
-    public void createAbonent() {
-
-    }
 }

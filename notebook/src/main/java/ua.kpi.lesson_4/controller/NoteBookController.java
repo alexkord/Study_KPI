@@ -21,8 +21,11 @@ public class NoteBookController {
 
     private void createRecord(Scanner sc) {
         ViewBook.print(ViewBook.ENTER_FIRSTNAME);
+        String firstName = sc.next();
         ViewBook.print(ViewBook.ENTER_LASTNAME);
+        String lastName = sc.next();
         ViewBook.print(ViewBook.ENTER_PATRONYMICNAME);
+        String patronymicName = sc.next();
         ViewBook.print(ViewBook.ENTER_NICKNAME);
         ViewBook.print(ViewBook.ENTER_GROUP);
         ViewBook.print(ViewBook.ENTER_NICKNAME);
