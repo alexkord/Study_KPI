@@ -3,13 +3,12 @@ package ua.kpi.lesson_5.flower_shop_model.entity.bouquet;
 import ua.kpi.lesson_5.flower_shop_model.entity.accessories.*;
 import ua.kpi.lesson_5.flower_shop_model.entity.herb.Flower;
 import ua.kpi.lesson_5.flower_shop_model.entity.herb.Herb;
-import ua.kpi.lesson_5.flower_shop_model.entity.herb.NotAFlower;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Bouquet {
-    private List<? extends Herb> flowers;
+    private List<Herb> flowers;
     private Accessory accessory;
     private Cost cost;
     private Event event;
