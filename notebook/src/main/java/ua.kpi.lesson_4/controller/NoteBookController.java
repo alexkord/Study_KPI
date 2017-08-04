@@ -16,17 +16,22 @@ public class NoteBookController {
     }
 
     public void startRecord() {
-        Scanner sc = new Scanner(System.in);
-        createRecord(sc);
+        createRecord();
     }
 
-    private void createRecord(Scanner sc) {
-        checkInput(sc, ViewBook.ENTER_FIRSTNAME, RegEx.FIRST_NAME);
-
+    private void createRecord() {
+        Scanner sc = new Scanner(System.in);
+        String firstName = checkInput(sc, ViewBook.ENTER_FIRSTNAME, RegEx.FIRST_NAME);
+        String lastName = checkInput(sc, ViewBook.ENTER_LASTNAME, RegEx.LAST_NAME);
 
     }
 
     private String checkInput(Scanner sc, String message, String regex) {
-        return "";
+        String result;
+        ViewBook.print(message);
+        while (!(sc.hasNext() && (result = sc.next()).matches(regex))) {
+            ViewBook.print(ViewBook.INCORRECT_INPUT);
+        }
+        return result;
     }
 }
