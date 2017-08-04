@@ -44,6 +44,8 @@ public class Abonent {
         this.skype = skype;
     }
 
+
+
     public String shortName() {
         return lastName + " " + firstName.charAt(0) + ".";
     }

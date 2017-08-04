@@ -13,4 +13,16 @@ public class Record {
         this.dateOfCreate = LocalDateTime.now();
         this.lastChangeDate = lastChangeDate;
     }
+
+    public Abonent getAbonent() {
+        return abonent;
+    }
+
+    public LocalDateTime getDateOfCreate() {
+        return dateOfCreate;
+    }
+
+    public Date getLastChangeDate() {
+        return lastChangeDate;
+    }
 }
