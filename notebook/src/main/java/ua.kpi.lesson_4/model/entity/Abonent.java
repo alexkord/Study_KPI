@@ -31,6 +31,19 @@ public class Abonent {
         this.address = address;
     }
 
+    public Abonent(String firstName, String lastName, String patronymicName, String nickName, String comment, Group group, String homePhone, String mobilePhone1, String email, String skype) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.patronymicName = patronymicName;
+        this.nickName = nickName;
+        this.comment = comment;
+        this.group = group;
+        this.homePhone = homePhone;
+        this.mobilePhone1 = mobilePhone1;
+        this.email = email;
+        this.skype = skype;
+    }
+
     public String shortName() {
         return lastName + " " + firstName.charAt(0) + ".";
     }

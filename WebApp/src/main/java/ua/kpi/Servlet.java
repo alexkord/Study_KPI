@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 @WebServlet(name = "Servlet")
 public class Servlet extends HttpServlet {
@@ -15,7 +16,6 @@ public class Servlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("Hello World");
         PrintWriter out = response.getWriter();
         out.println("<h1>Hello from web</h1>");
         out.close();

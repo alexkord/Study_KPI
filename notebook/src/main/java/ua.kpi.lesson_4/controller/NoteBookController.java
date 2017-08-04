@@ -27,7 +27,9 @@ public class NoteBookController {
         ViewBook.print(ViewBook.ENTER_PATRONYMICNAME);
         String patronymicName = sc.next();
         ViewBook.print(ViewBook.ENTER_NICKNAME);
+        String nickName = sc.next();
         ViewBook.print(ViewBook.ENTER_GROUP);
+        String group = sc.next();
         ViewBook.print(ViewBook.ENTER_NICKNAME);
     }
 }
