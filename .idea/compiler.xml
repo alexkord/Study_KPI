@@ -10,13 +10,15 @@
         <module name="guess_game" />
         <module name="lesson_2" />
         <module name="notebook" />
+        <module name="WebApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flower_shop" target="1.7" />
-      <module name="guess_game" target="1.7" />
-      <module name="notebook" target="1.7" />
-      <module name="Study_KPI" target="1.7" />
+      <module name="guess_game" target="1.5" />
+      <module name="notebook" target="1.5" />
+      <module name="Study_KPI" target="1.5" />
+      <module name="WebApp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
