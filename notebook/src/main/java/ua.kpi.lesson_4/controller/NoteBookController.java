@@ -21,6 +21,7 @@ public class NoteBookController {
 
     public void startRecord() {
         createRecord();
+        ViewBook.printObject(noteModel.getRecords());
     }
 
     private void createRecord() {
@@ -30,7 +31,7 @@ public class NoteBookController {
         abonent = new Abonent(firstName, lastName);
         record = new Record(abonent);
         noteModel.addRecords(record);
-        ViewBook.printObject(record);
+
     }
 
     private String checkInput(Scanner sc, String message, String regex) {

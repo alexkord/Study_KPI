@@ -18,4 +18,11 @@ public class NoteModel {
     public void addRecords(Record record) {
         this.records.add(record);
     }
+
+    @Override
+    public String toString() {
+        return "NoteModel{" +
+                "records=" + records +
+                '}';
+    }
 }

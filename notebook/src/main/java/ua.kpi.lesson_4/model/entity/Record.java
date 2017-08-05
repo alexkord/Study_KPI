@@ -1,23 +1,24 @@
 package ua.kpi.lesson_4.model.entity;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Record {
     private Abonent abonent;
-    private LocalDateTime dateOfCreate;
+    private LocalDate dateOfCreate;
     private Date lastChangeDate;
 
     public Record(Abonent abonent) {
         this.abonent = abonent;
-        this.dateOfCreate = LocalDateTime.now();
+        this.dateOfCreate = LocalDate.now();
     }
 
     public Abonent getAbonent() {
         return abonent;
     }
 
-    public LocalDateTime getDateOfCreate() {
+    public LocalDate getDateOfCreate() {
         return dateOfCreate;
     }
 
@@ -31,9 +32,6 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Record{" +
-                "abonent=" + abonent +
-                ", dateOfCreate=" + dateOfCreate +
-                '}';
+        return abonent + ", dateOfCreate: " + dateOfCreate;
     }
 }

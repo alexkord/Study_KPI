@@ -46,8 +46,7 @@ public class Abonent {
     }
 
     public Abonent createAbonent(String name, String lastName) {
-        Abonent abonent = new Abonent(name, lastName);
-        return abonent;
+        return new Abonent(name, lastName);
     }
 
     public String shortName() {
@@ -56,19 +55,8 @@ public class Abonent {
 
     @Override
     public String toString() {
-        return "Abonent{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", patronymicName='" + patronymicName + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", comment='" + comment + '\'' +
-                ", group=" + group +
-                ", homePhone='" + homePhone + '\'' +
-                ", mobilePhone1='" + mobilePhone1 + '\'' +
-                ", mobPhone2='" + mobPhone2 + '\'' +
-                ", email='" + email + '\'' +
-                ", skype='" + skype + '\'' +
-                ", address=" + address +
-                '}';
+        return "Abonent: " + shortName() +
+                " group: " + group;
+
     }
 }
