@@ -8,10 +8,9 @@ public class Record {
     private LocalDateTime dateOfCreate;
     private Date lastChangeDate;
 
-    public Record(Abonent abonent, Date dateOfCreate, Date lastChangeDate) {
+    public Record(Abonent abonent) {
         this.abonent = abonent;
         this.dateOfCreate = LocalDateTime.now();
-        this.lastChangeDate = lastChangeDate;
     }
 
     public Abonent getAbonent() {
@@ -24,5 +23,17 @@ public class Record {
 
     public Date getLastChangeDate() {
         return lastChangeDate;
+    }
+
+    public void createRecord(Abonent abonent) {
+        Record record = new Record(abonent);
+    }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "abonent=" + abonent +
+                ", dateOfCreate=" + dateOfCreate +
+                '}';
     }
 }

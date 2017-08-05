@@ -28,8 +28,12 @@ public class ViewBook {
 
     public static void print(String... messages) {
         for (String s : messages) {
-            System.out.println(s);
+            System.out.print(s + " ");
         }
+    }
+
+    public static void printObject(Object o) {
+        System.out.println(o);
     }
 
     public static void print(String message) {

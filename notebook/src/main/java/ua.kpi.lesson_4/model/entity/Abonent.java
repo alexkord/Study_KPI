@@ -12,6 +12,7 @@ public class Abonent {
     public Abonent(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.group = Group.FAMILY;
     }
 
     public Abonent(String firstName, String lastName, String patronymicName,
@@ -44,7 +45,10 @@ public class Abonent {
         this.skype = skype;
     }
 
-
+    public Abonent createAbonent(String name, String lastName) {
+        Abonent abonent = new Abonent(name, lastName);
+        return abonent;
+    }
 
     public String shortName() {
         return lastName + " " + firstName.charAt(0) + ".";

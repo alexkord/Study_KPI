@@ -5,14 +5,10 @@ import java.util.List;
 
 public class NoteModel {
     private List<Record> records;
-    private Record record;
+
 
     public NoteModel() {
         this.records = new ArrayList<>();
-    }
-
-    public Record getRecord() {
-        return record;
     }
 
     public List<Record> getRecords() {
