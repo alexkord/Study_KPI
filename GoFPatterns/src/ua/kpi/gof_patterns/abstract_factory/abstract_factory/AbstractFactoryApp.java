@@ -1,4 +1,4 @@
-package ua.kpi.gof_patterns.abstract_factory;
+package ua.kpi.gof_patterns.abstract_factory.abstract_factory;
 
 public class AbstractFactoryApp {
 
@@ -9,6 +9,7 @@ public class AbstractFactoryApp {
         Touchpad t = factory.getTouchpad();
 
         m.click();
+        m.dbclick();
         k.print();
         k.println();
         t.track(10, 35);
