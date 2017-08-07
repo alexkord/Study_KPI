@@ -1,6 +1,16 @@
 package ua.kpi.gof_patterns.abstract_factory.adapter;
 
 public class AdapterApp {
+    public static void main(String[] args) {
+        //1 - й способ через наследование
+        VectorGraphicsInterface g1 = new VectorAdapterFromRaster();
+        g1.drawLine();
+        g1.drawSquare();
+        //2 - й способ через композицию
+        VectorGraphicsInterface g2 = new VectorAdapterFromRaster2(new RasterGraphics());
+        g2.drawLine();
+        g2.drawSquare();
+    }
 }
 
 interface VectorGraphicsInterface {
