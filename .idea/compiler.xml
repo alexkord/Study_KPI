@@ -15,12 +15,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="flower_shop" target="1.8" />
-      <module name="guess_game" target="1.8" />
+      <module name="flower_shop" target="1.7" />
+      <module name="guess_game" target="1.7" />
       <module name="MyArrayList" target="1.8" />
       <module name="notebook" target="1.8" />
-      <module name="Study_KPI" target="1.8" />
-      <module name="WebApp" target="1.8" />
+      <module name="Study_KPI" target="1.7" />
+      <module name="WebApp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
