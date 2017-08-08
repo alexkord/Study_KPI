@@ -15,7 +15,7 @@ public class FactoryMethodApp {
     }
 
     public static void main(String[] args) {
-        WatchMaker maker = getMakerByName("dsdsds");
+        WatchMaker maker = getMakerByName("");
 
         Watch watch = maker.createWatch();
         watch.showTime();
