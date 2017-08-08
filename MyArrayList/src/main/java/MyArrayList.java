@@ -5,39 +5,40 @@ import java.util.Collection;
 import java.util.function.UnaryOperator;
 
 public class MyArrayList<E> extends ArrayList<E> {
+    public static final String ERROR_MESSAGE = "command doesn't support";
 
     @Override
     public E set(int index, E element) {
-        throw new UnsupportedOperationException("'set' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public E remove(int index) {
-        throw new UnsupportedOperationException("'remove' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public boolean remove(Object o) {
-        throw new UnsupportedOperationException("'remove' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException("'clear' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public void removeRange(int fromIndex, int toIndex) {
-        throw new UnsupportedOperationException("'removeRange' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        throw new UnsupportedOperationException("'removeAll' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 
     @Override
     public void replaceAll(UnaryOperator<E> operator) {
-        throw new UnsupportedOperationException("'replaceAll' isn't supported");
+        throw new UnsupportedOperationException(ERROR_MESSAGE);
     }
 }

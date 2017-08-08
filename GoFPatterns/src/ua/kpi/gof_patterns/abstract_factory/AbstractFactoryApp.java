@@ -1,4 +1,4 @@
-package ua.kpi.gof_patterns.abstract_factory.abstract_factory;
+package ua.kpi.gof_patterns.abstract_factory;
 
 public class AbstractFactoryApp {
 

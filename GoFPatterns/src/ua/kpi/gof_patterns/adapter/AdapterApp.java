@@ -1,4 +1,4 @@
-package ua.kpi.gof_patterns.abstract_factory.adapter;
+package ua.kpi.gof_patterns.adapter;
 
 public class AdapterApp {
     public static void main(String[] args) {

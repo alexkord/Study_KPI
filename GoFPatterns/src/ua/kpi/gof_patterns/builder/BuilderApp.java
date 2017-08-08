@@ -1,4 +1,4 @@
-package ua.kpi.gof_patterns.abstract_factory.builder;
+package ua.kpi.gof_patterns.builder;
 
 public class BuilderApp {
 
