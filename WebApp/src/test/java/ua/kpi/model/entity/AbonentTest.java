@@ -2,6 +2,7 @@ package ua.kpi.model.entity;
 
 import org.junit.Assert;
 import org.junit.Test;
+import ua.kpi.model.entity.Abonent;
 
 import static org.junit.Assert.*;
 

@@ -45,7 +45,7 @@ public class Abonent {
         this.skype = skype;
     }
 
-    public Abonent createAbonent(String name, String lastName) {
+    public static Abonent createAbonent(String name, String lastName) {
         return new Abonent(name, lastName);
     }
 
