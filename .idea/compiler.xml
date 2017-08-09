@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flower_shop" />
+        <module name="GoF_Patterns" />
         <module name="guess_game" />
         <module name="lesson_2" />
         <module name="MyArrayList" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="flower_shop" target="1.7" />
+      <module name="GoF_Patterns" target="1.7" />
       <module name="guess_game" target="1.7" />
       <module name="MyArrayList" target="1.8" />
       <module name="notebook" target="1.8" />
