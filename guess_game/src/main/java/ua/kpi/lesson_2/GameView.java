@@ -5,8 +5,8 @@ import java.util.ResourceBundle;
 
 public class GameView {
     //Resourse bundle
-    public static final String BUNDLE_NAME = "messasges";
-    public static final ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("ua"));
+    public static final String BUNDLE_NAME = "messages";
+    public static final ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("en", "EN"));
     //Game
     static final String START_GAME = "input";
     static final String GUESS = "Congrats!!! You guess)";
