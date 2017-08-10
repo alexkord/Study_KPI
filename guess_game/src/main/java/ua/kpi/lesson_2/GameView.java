@@ -1,6 +1,14 @@
 package ua.kpi.lesson_2;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 public class GameView {
-    static final String START_GAME = "Hello! Over this game you have to guess the number!";
+    //Resourse bundle
+    public static final String BUNDLE_NAME = "messasges";
+    public static final ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("ua"));
+    //Game
+    static final String START_GAME = "input";
     static final String GUESS = "Congrats!!! You guess)";
     static final String MORE = "The secret number is more than yours";
     static final String LESS = "The secret number is less than yours";
@@ -26,6 +34,10 @@ public class GameView {
 
     public static void print(String message) {
         System.out.println(message);
+    }
+
+    public static String printGreeting() {
+        return bundle.getString(START_GAME);
     }
 
     public static void printRange(int start, int end) {

@@ -18,7 +18,7 @@ class GameController {
     }
 
     public void setupGame(Scanner sc) {
-        gameView.print(GameView.START_GAME, GameView.ENTER_FIRST_RANGE);
+        gameView.print(GameView.printGreeting(), GameView.ENTER_FIRST_RANGE);
         int start = sc.nextInt();
         gameView.print(GameView.ENTER_LAST_RANGE);
         int end = sc.nextInt();
@@ -27,19 +27,23 @@ class GameController {
     }
 
 
-    public void guessGame(Scanner sc) {
+    private void guessGame(Scanner sc) {
         int guess = -1;
         int secretRand = gameModel.getSecretRand();
         while (guess != secretRand) {
             GameView.print(GameView.ENTER_GUESS);
             guess = sc.nextInt();
-            if (guess == secretRand) {
-                GameView.print(GameView.GUESS);
-            } else if (guess > secretRand) {
-                GameView.print(GameView.LESS);
-            } else {
-                GameView.print(GameView.MORE);
-            }
+            checkGuess(guess, secretRand);
+        }
+    }
+
+    private void checkGuess(int guess, int secretRand) {
+        if (guess == secretRand) {
+            GameView.print(GameView.GUESS);
+        } else if (guess > secretRand) {
+            GameView.print(GameView.LESS);
+        } else {
+            GameView.print(GameView.MORE);
         }
     }
 }
