@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/flower_shop/flower_shop.iml" filepath="$PROJECT_DIR$/flower_shop/flower_shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/guess_game/guess_game.iml" filepath="$PROJECT_DIR$/guess_game/guess_game.iml" />
       <module fileurl="file://$PROJECT_DIR$/notebook/notebook.iml" filepath="$PROJECT_DIR$/notebook/notebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pattern_tasks/pattern_tasks.iml" filepath="$PROJECT_DIR$/pattern_tasks/pattern_tasks.iml" />
     </modules>
   </component>
 </project>
