@@ -1,10 +1,10 @@
-package ua.kpi.task_1;
+package ua.kpi.task_2;
 
 public class MushroomGlade implements State {
 
     @Override
     public void doAction(ManInAction manInAction) {
-        System.out.println(this);
+        manInAction.setState(this);
     }
 
     @Override

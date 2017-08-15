@@ -1,4 +1,4 @@
-package ua.kpi.task_1;
+package ua.kpi.task_2;
 
 public class RiverShore implements State {
 
