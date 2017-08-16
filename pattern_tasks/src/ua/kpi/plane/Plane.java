@@ -1,4 +1,4 @@
-package ua.kpi.task_4;
+package ua.kpi.plane;
 
 public class Plane {
 }
