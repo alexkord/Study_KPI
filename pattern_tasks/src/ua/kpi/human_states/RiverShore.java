@@ -1,6 +1,6 @@
-package ua.kpi.task_2;
+package ua.kpi.human_states;
 
-public class MushroomGlade implements State {
+public class RiverShore implements State {
 
     @Override
     public void doAction(ManInAction manInAction) {
@@ -9,6 +9,6 @@ public class MushroomGlade implements State {
 
     @Override
     public String toString() {
-        return "Mushroomer";
+        return "Fisher";
     }
 }

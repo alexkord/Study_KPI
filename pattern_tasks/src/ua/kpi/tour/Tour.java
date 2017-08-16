@@ -1,4 +1,5 @@
-package ua.kpi.task_3;
+package ua.kpi.tour;
+
 
 public class Tour {
     private String direction;

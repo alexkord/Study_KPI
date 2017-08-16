@@ -1,4 +1,4 @@
-package ua.kpi.task_3;
+package ua.kpi.tour;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ua.kpi.task_1;
+package ua.kpi.human_states;
 
 public class ManInAction {
     private State state;
@@ -11,4 +11,7 @@ public class ManInAction {
         this.state = state;
     }
 
+    public void changeState(State state) {
+        state.doAction(this);
+    }
 }

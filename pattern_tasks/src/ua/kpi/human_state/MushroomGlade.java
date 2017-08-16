@@ -1,4 +1,4 @@
-package ua.kpi.task_1;
+package ua.kpi.human_state;
 
 public class MushroomGlade implements State {
 

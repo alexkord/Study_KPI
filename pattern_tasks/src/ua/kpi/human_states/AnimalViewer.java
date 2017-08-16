@@ -1,10 +1,10 @@
-package ua.kpi.task_1;
+package ua.kpi.human_states;
 
 public class AnimalViewer implements State {
 
     @Override
-    public void doAction(ManInAction man) {
-        System.out.println(this);
+    public void doAction(ManInAction manInAction) {
+        manInAction.setState(this);
     }
 
     @Override
