@@ -27,6 +27,7 @@
         <module>notebook</module>
         <module>MyArrayList</module>
         <module>GoF_Patterns</module>
+        <module>car</module>
     </modules>
 
 </project>
