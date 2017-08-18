@@ -4,8 +4,9 @@ public class GiftBuilder {
 
     public static Gift createGift() {
         Gift gift = new Gift();
-        gift.addItem(new CaramelCandy(), 3);
-        gift.addItem(new ChocolateCandy(), 5);
+        gift.addItem(new CaramelCandy(), 1);
+        gift.addItem(new ChocolateCandy(), 1);
+        gift.addItem(new IrisCandy(), 2);
         return gift;
     }
 }

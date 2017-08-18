@@ -1,3 +1,5 @@
+package driver_model;
+
 public class Driver {
     private String name;
     private DriversLicense driversLicense;
