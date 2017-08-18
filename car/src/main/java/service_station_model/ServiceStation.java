@@ -7,10 +7,10 @@ public class ServiceStation implements Fixable {
 
     @Override
     public boolean checkEngine(Engine engine) {
-        if (engine.getComponentResourse() > engine.getNextLimitResourse()) {
-
+        if (engine.getCurrentComponentResourse() - engine.getLastFixedMileage() > engine.getPeriodOfFix()) {
+            return true;
         }
-        return true;
+        return false;
     }
 
     @Override

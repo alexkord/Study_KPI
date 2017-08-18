@@ -2,12 +2,13 @@ package car_model;
 
 public abstract class Component {
     int currentComponentResourse;
+    boolean isNeedFix;
 
     public Component(int currentComponentResourse) {
         this.currentComponentResourse = currentComponentResourse;
     }
 
-    public int getComponentResourse() {
+    public int getCurrentComponentResourse() {
         return currentComponentResourse;
     }
 

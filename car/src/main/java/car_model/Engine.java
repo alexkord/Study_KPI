@@ -10,11 +10,12 @@ public class Engine extends Component {
         super(currentComponentResourse);
     }
 
-    public boolean isNeedFix() {
-        if(currentComponentResourse - lastFixedMileage > periodOfFix) {
-            return true;
-        }
-        return false;
+    public int getPeriodOfFix() {
+        return periodOfFix;
+    }
+
+    public int getLastFixedMileage() {
+        return lastFixedMileage;
     }
 
     public int getNextLimitResourse() {
