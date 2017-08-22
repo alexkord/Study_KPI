@@ -1,6 +1,6 @@
-package main.ua.kpi.new_years_gift.gift_model;
+package main.ua.kpi.new_years_gift.model.gift_model;
 
-import main.ua.kpi.new_years_gift.candy_model.Item;
+import main.ua.kpi.new_years_gift.model.candy_model.Item;
 
 import java.util.ArrayList;
 import java.util.List;

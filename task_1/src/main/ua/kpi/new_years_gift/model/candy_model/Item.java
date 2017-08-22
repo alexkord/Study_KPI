@@ -1,4 +1,4 @@
-package main.ua.kpi.new_years_gift.candy_model;
+package main.ua.kpi.new_years_gift.model.candy_model;
 
 public interface Item {
     String name();
