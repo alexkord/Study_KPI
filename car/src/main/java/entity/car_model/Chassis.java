@@ -1,4 +1,4 @@
-package car_model;
+package entity.car_model;
 
 public class Chassis extends Component {
     static final int periodOfFix = 5_000;

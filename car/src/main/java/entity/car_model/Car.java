@@ -1,6 +1,6 @@
-package car_model;
+package entity.car_model;
 
-import driver_model.Driver;
+import entity.driver_model.Driver;
 
 public class Car {
     private Driver driver;

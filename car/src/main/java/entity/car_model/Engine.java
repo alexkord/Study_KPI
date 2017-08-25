@@ -1,6 +1,4 @@
-package car_model;
-
-import car_model.Component;
+package entity.car_model;
 
 public class Engine extends Component {
     static final int periodOfFix = 10_000;

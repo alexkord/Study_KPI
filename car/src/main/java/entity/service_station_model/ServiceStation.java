@@ -1,6 +1,6 @@
-package service_station_model;
+package entity.service_station_model;
 
-import car_model.Engine;
+import entity.car_model.Engine;
 
 public class ServiceStation implements Fixable {
 

@@ -1,4 +1,4 @@
-package car_model;
+package entity.car_model;
 
 public abstract class Component {
     int currentComponentResourse;

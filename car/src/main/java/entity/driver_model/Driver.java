@@ -1,4 +1,4 @@
-package driver_model;
+package entity.driver_model;
 
 public class Driver {
     private String name;
