@@ -27,6 +27,12 @@ public class GiftBuilder {
         return gift;
     }
 
+    public static Gift ceateStandartGift() {
+        Gift gift = new Gift();
+        gift.addItem(new ChocolateCandy(), 7);
+        return gift;
+    }
+
     private static Item checkCandy(String candy) {
         if (candy.equalsIgnoreCase("caramel")) {
             return new CaramelCandy();

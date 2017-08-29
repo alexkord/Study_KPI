@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 
 public class GiftBuilderTest {
     @Test
-    public void createGift() throws Exception {
-        Gift gift = GiftBuilder.createGift();
+    public void ceateStandartGift() throws Exception {
+        Gift gift = GiftBuilder.ceateStandartGift();
         assertNotNull(gift);
     }
 }
