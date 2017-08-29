@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class GiftBuilder {
     private static Scanner sc = new Scanner(System.in);
-
+    private static final int COUNT_OF_CANDIES = 7;
     public static Gift createGift() {
         Gift gift = new Gift();
         GiftView.show(GiftView.GREETINGS);
@@ -29,7 +29,7 @@ public class GiftBuilder {
 
     public static Gift ceateStandartGift() {
         Gift gift = new Gift();
-        gift.addItem(new ChocolateCandy(), 7);
+        gift.addItem(new ChocolateCandy(), COUNT_OF_CANDIES);
         return gift;
     }
 
