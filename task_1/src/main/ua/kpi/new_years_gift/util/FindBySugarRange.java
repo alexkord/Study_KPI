@@ -11,10 +11,18 @@ public class FindBySugarRange {
 
     public List<Item> findSugarRange(Gift gift, int from, int to) {
         List<Item> items = new ArrayList<>();
-        for (Item item: gift.getItems()) {
+        for (Item item : gift.getItems()) {
             if (item.sugarContent() >= from && item.sugarContent() <= to) {
                 items.add(item);
             }
+        }
+        return items;
+    }
+
+    public List<String> showFound(List<Item> founded) {
+        List<String> items = new ArrayList<>();
+        for (Item item : founded) {
+            items.add(item.toString());
         }
         return items;
     }
