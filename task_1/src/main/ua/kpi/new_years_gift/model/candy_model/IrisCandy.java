@@ -1,6 +1,6 @@
 package main.ua.kpi.new_years_gift.model.candy_model;
 
-public class IrisCandy extends Candy {
+public class IrisCandy implements Item {
     @Override
     public String name() {
         return "Iris candy";

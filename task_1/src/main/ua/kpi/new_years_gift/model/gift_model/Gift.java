@@ -30,7 +30,9 @@ public class Gift {
         return weight;
     }
 
-
+    public List<Item> getItems() {
+        return items;
+    }
 
     public void showItems() {
         for (Item item : items) {
