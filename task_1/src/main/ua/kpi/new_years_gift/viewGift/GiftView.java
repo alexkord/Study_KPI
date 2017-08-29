@@ -7,9 +7,13 @@ public class GiftView {
     public static final String TYPE_OF_CANDIE = "Type what kind of candie do you wish to add?:\n"
                                                 + "1. Caramel candy\n" +
                                                     "2. Chocolate candy\n" +
-                                                    "3. Iris candy";
+                                                    "3. Iris candy\n";
 
     public static void show(String string) {
         System.out.print(string);
+    }
+
+    public static void showWeight(int i) {
+        System.out.print(i + "g");
     }
 }

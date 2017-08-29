@@ -30,6 +30,8 @@ public class Gift {
         return weight;
     }
 
+
+
     public void showItems() {
         for (Item item : items) {
             System.out.println("Item: " + item.name());

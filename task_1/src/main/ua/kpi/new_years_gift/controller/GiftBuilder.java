@@ -12,12 +12,7 @@ import java.util.Scanner;
 public class GiftBuilder {
     private static Scanner sc = new Scanner(System.in);
 
-
-    public void start() {
-        createGift();
-    }
-
-    private Gift createGift() {
+    public static Gift createGift() {
         Gift gift = new Gift();
         GiftView.show(GiftView.GREETINGS);
         GiftView.show(GiftView.COUNT_OF_CANDIES);
@@ -32,7 +27,7 @@ public class GiftBuilder {
         return gift;
     }
 
-    private Item checkCandy(String candy) {
+    private static Item checkCandy(String candy) {
         if (candy.equalsIgnoreCase("caramel")) {
             return new CaramelCandy();
         } else if (candy.equalsIgnoreCase("chocolate")) {
