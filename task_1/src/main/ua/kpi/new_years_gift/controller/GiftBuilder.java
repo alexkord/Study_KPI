@@ -11,19 +11,22 @@ import java.util.Scanner;
 
 public class GiftBuilder {
     private static Scanner sc = new Scanner(System.in);
-    private Gift gift;
+
 
     public void start() {
-        gift = createGift();
+        createGift();
     }
 
-    public Gift createGift() {
+    private Gift createGift() {
         Gift gift = new Gift();
-        int count = sc.nextInt();
-        String candy = sc.next();
-        for (int i = 0; i < count; i++) {
+        GiftView.show(GiftView.GREETINGS);
+        GiftView.show(GiftView.COUNT_OF_CANDIES);
+        int countOfType = sc.nextInt();
+        for (int i = 0; i < countOfType; i++) {
             GiftView.show(GiftView.TYPE_OF_CANDIE);
-            GiftView.show(GiftView.COUNT_OF_CANDIES);
+            String candy = sc.next();
+            GiftView.show(GiftView.COUNT_OF_ITEMS);
+            int count = sc.nextInt();
             gift.addItem(checkCandy(candy), count);
         }
         return gift;
@@ -39,6 +42,5 @@ public class GiftBuilder {
         } else {
             throw new RuntimeException("Not supported operation ");
         }
-
     }
 }
