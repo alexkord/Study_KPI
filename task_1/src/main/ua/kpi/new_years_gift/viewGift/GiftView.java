@@ -1,4 +1,4 @@
-package main.ua.kpi.new_years_gift.viewGift;
+package kpi.new_years_gift.viewGift;
 
 public class GiftView {
     public static final String GREETINGS = "Hello, let;s create a gift!\n";

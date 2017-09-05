@@ -1,6 +1,7 @@
 package main.ua.kpi.new_years_gift.controller;
 
-import main.ua.kpi.new_years_gift.model.gift_model.Gift;
+import kpi.new_years_gift.controller.GiftBuilder;
+import kpi.new_years_gift.model.gift_model.Gift;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

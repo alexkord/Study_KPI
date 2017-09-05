@@ -1,6 +1,7 @@
-package main.ua.kpi.new_years_gift.util;
+package kpi.new_years_gift.util;
 
-import main.ua.kpi.new_years_gift.model.candy_model.Item;
+import kpi.new_years_gift.model.candy_model.Item;
+
 import java.util.Comparator;
 
 public class SortGiftByWeight implements Comparator<Item> {

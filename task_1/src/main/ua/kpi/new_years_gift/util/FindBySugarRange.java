@@ -1,11 +1,10 @@
-package main.ua.kpi.new_years_gift.util;
+package kpi.new_years_gift.util;
 
-import main.ua.kpi.new_years_gift.model.candy_model.Item;
-import main.ua.kpi.new_years_gift.model.gift_model.Gift;
+import kpi.new_years_gift.model.candy_model.Item;
+import kpi.new_years_gift.model.gift_model.Gift;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class FindBySugarRange {
 

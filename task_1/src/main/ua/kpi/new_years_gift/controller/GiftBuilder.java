@@ -1,11 +1,11 @@
-package main.ua.kpi.new_years_gift.controller;
+package kpi.new_years_gift.controller;
 
-import main.ua.kpi.new_years_gift.model.candy_model.IrisCandy;
-import main.ua.kpi.new_years_gift.model.candy_model.Item;
-import main.ua.kpi.new_years_gift.model.gift_model.Gift;
-import main.ua.kpi.new_years_gift.model.candy_model.CaramelCandy;
-import main.ua.kpi.new_years_gift.model.candy_model.ChocolateCandy;
-import main.ua.kpi.new_years_gift.viewGift.GiftView;
+import kpi.new_years_gift.model.candy_model.CaramelCandy;
+import kpi.new_years_gift.model.candy_model.ChocolateCandy;
+import kpi.new_years_gift.model.candy_model.IrisCandy;
+import kpi.new_years_gift.model.candy_model.Item;
+import kpi.new_years_gift.model.gift_model.Gift;
+import kpi.new_years_gift.viewGift.GiftView;
 
 import java.util.Scanner;
 

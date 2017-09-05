@@ -25,9 +25,16 @@
         <module>guess_game</module>
         <module>flower_shop</module>
         <module>notebook</module>
-        <module>MyArrayList</module>
+        <module>my_array_list</module>
         <module>GoF_Patterns</module>
         <module>car</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -1,4 +1,6 @@
-package main.ua.kpi.new_years_gift.model.candy_model;
+package kpi.new_years_gift.model.candy_model;
+
+import kpi.new_years_gift.model.candy_model.Item;
 
 public class CaramelCandy implements Item {
     @Override
