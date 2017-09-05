@@ -1,2 +1,2 @@
 # Study_KPI
-Program has to improve skills in Java language programming
+Program have to improve skills in Java language programming
