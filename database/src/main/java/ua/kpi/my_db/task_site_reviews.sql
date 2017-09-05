@@ -1,0 +1,2 @@
+INSERT INTO task_site.reviews (r_category, r_header, r_text, r_dt) VALUES (1, 'Роботы на страже строек', '', '2011-10-03 05:17:37');
+INSERT INTO task_site.reviews (r_category, r_header, r_text, r_dt) VALUES (1, 'Когда всё это кончится!?', 'Никогда!', '2012-12-12 06:31:13');

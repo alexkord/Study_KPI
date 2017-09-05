@@ -1,0 +1,10 @@
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (1, 1);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (2, 1);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (7, 1);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (1, 2);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (4, 3);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (1, 4);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (2, 4);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (1, 5);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (2, 5);
+INSERT INTO task_site.m2m_banners_pages (b_id, p_id) VALUES (3, 5);
