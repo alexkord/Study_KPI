@@ -23,7 +23,7 @@ enum Transmission {
 
 class Car {
     String make;
-    Transmission transmission;
+    Transmission    transmission;
     int maxSpeed;
 
     public void setMake(String make) {

@@ -1,9 +1,6 @@
 package kpi.new_years_gift.controller;
 
-import kpi.new_years_gift.model.candy_model.CaramelCandy;
-import kpi.new_years_gift.model.candy_model.ChocolateCandy;
-import kpi.new_years_gift.model.candy_model.IrisCandy;
-import kpi.new_years_gift.model.candy_model.Item;
+import kpi.new_years_gift.model.candy_model.*;
 import kpi.new_years_gift.model.gift_model.Gift;
 import kpi.new_years_gift.viewGift.GiftView;
 
@@ -12,34 +9,23 @@ import java.util.Scanner;
 public class GiftBuilder {
     private static Scanner sc = new Scanner(System.in);
     private static final int COUNT_OF_CANDIES = 7;
-    public static Gift createGift() {
+
+    public static Gift buildGift() {
         Gift gift = new Gift();
-        GiftView.show(GiftView.GREETINGS);
-        GiftView.show(GiftView.COUNT_OF_CANDIES);
-        int countOfType = sc.nextInt();
-        for (int i = 0; i < countOfType; i++) {
-            GiftView.show(GiftView.TYPE_OF_CANDIE);
-            String candy = sc.next();
-            GiftView.show(GiftView.COUNT_OF_ITEMS);
-            int count = sc.nextInt();
-            gift.addItem(checkCandy(candy), count);
-        }
+        gift.addCandy(new Candy.CandyBuilder(CandyType.CARAMEL)
+                .setSugarContent(2.2)
+                .setWeight(14)
+                .build());
         return gift;
     }
 
-    public static Gift ceateStandartGift() {
-        Gift gift = new Gift();
-        gift.addItem(new ChocolateCandy(), COUNT_OF_CANDIES);
-        return gift;
-    }
-
-    private static Item checkCandy(String candy) {
+    private static CandyType checkCandy(String candy) {
         if (candy.equalsIgnoreCase("caramel")) {
-            return new CaramelCandy();
+            return CandyType.CARAMEL;
         } else if (candy.equalsIgnoreCase("chocolate")) {
-            return new ChocolateCandy();
+            return CandyType.CHOCOLATE;
         } else if (candy.equalsIgnoreCase("iris")) {
-            return new IrisCandy();
+            return CandyType.IRIS;
         } else {
             throw new RuntimeException("Not supported operation ");
         }

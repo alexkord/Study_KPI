@@ -1,6 +1,6 @@
 package kpi.new_years_gift.util;
 
-import kpi.new_years_gift.model.candy_model.Item;
+import kpi.new_years_gift.model.candy_model.Candy;
 import kpi.new_years_gift.model.gift_model.Gift;
 
 import java.util.ArrayList;
@@ -8,21 +8,13 @@ import java.util.List;
 
 public class FindBySugarRange {
 
-    public List<Item> findSugarRange(Gift gift, int from, int to) {
-        List<Item> items = new ArrayList<>();
-        for (Item item : gift.getItems()) {
-            if (item.sugarContent() >= from && item.sugarContent() <= to) {
-                items.add(item);
+    public List<Candy> findBySugar(Gift gift, int from, int to) {
+        List<Candy> candies = new ArrayList<>();
+        for (Candy candy : gift.getCandies()) {
+            if (candy.getSugarContent() >= from && candy.getSugarContent() <= to) {
+                candies.add(candy);
             }
         }
-        return items;
-    }
-
-    public List<String> showFound(List<Item> founded) {
-        List<String> items = new ArrayList<>();
-        for (Item item : founded) {
-            items.add(item.toString());
-        }
-        return items;
+        return candies;
     }
 }

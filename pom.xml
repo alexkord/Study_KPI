@@ -26,8 +26,9 @@
         <module>flower_shop</module>
         <module>notebook</module>
         <module>my_array_list</module>
-        <module>GoF_Patterns</module>
+        <module>gof_patterns</module>
         <module>car</module>
+        <module>web_app</module>
     </modules>
     <dependencies>
         <dependency>

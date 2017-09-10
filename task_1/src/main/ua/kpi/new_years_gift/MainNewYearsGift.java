@@ -9,9 +9,10 @@ import java.util.Collections;
 
 public class MainNewYearsGift {
     public static void main(String[] args) {
-        Gift gift = GiftBuilder.createGift();
+        Gift gift = GiftBuilder.buildGift();
         GiftView.showWeight(gift.getWeight());
-        Collections.sort(gift.getItems(), new SortGiftByWeight());
+        Collections.sort(gift.getCandies(), new SortGiftByWeight());
         gift.showItems();
+        Gift gift1 = GiftBuilder.buildGift();
     }
 }

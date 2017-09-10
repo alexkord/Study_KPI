@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class GiftBuilderTest {
     @Test
     public void createStandartGift() throws Exception {
-        Gift gift = GiftBuilder.ceateStandartGift();
+        Gift gift = GiftBuilder.buildGift();
         assertNotNull(gift);
     }
 }
