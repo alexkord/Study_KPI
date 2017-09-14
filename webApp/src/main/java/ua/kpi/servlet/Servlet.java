@@ -1,4 +1,4 @@
-package ua.kpi;
+package ua.kpi.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

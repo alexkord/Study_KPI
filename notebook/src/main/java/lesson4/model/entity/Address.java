@@ -1,4 +1,4 @@
-package ua.kpi.lesson_4.model.entity;
+package lesson4.model.entity;
 
 public class Address {
     private String index, numberOfBuilding, apartmentNumber;

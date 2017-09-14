@@ -1,4 +1,4 @@
-package ua.kpi.lesson_4.view;
+package lesson4.view;
 
 public class RegEx {
     public static final String FIRST_NAME = "^[A-Za-z]{3,20}$";

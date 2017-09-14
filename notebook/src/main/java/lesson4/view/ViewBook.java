@@ -1,4 +1,4 @@
-package ua.kpi.lesson_4.view;
+package lesson4.view;
 
 public class ViewBook {
     //names input

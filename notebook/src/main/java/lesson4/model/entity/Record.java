@@ -1,7 +1,6 @@
-package ua.kpi.lesson_4.model.entity;
+package lesson4.model.entity;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Record {

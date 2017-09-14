@@ -1,6 +1,6 @@
-package ua.kpi.lesson_4.model.entity;
+package lesson4.model.entity;
 
-import ua.kpi.lesson_4.model.entity.group.Group;
+import lesson4.model.entity.group.Group;
 
 public class Abonent {
     private String firstName, lastName, patronymicName, nickName;
@@ -49,7 +49,7 @@ public class Abonent {
         return new Abonent(name, lastName);
     }
 
-    public String shortName() {
+    private String shortName() {
         return lastName + " " + firstName.charAt(0) + ".";
     }
 

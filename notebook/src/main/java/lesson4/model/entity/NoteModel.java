@@ -1,4 +1,4 @@
-package ua.kpi.lesson_4.model.entity;
+package lesson4.model.entity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,12 @@
-package ua.kpi.lesson_4.controller;
+package lesson4.controller;
 
-import ua.kpi.lesson_4.model.entity.Abonent;
-import ua.kpi.lesson_4.model.entity.NoteModel;
-import ua.kpi.lesson_4.model.entity.Record;
-import ua.kpi.lesson_4.view.RegEx;
-import ua.kpi.lesson_4.view.ViewBook;
+
+import lesson4.model.entity.Abonent;
+import lesson4.model.entity.NoteModel;
+import lesson4.model.entity.Record;
+import lesson4.view.RegEx;
+import lesson4.view.ViewBook;
+
 
 import java.util.Scanner;
 
