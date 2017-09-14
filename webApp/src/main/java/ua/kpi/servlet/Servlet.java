@@ -8,14 +8,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "Servlet")
+@WebServlet("/Servlet")
 public class Servlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<h1 align=center>Hello from Web</h1>");
-        out.println("<hr/>");
-        out.println("<hr/>");
-        out.close();
+        out.println("<html><body>");
+        out.println("Works.");
+        out.println("</body></html>");
     }
 }
