@@ -6,8 +6,12 @@
 
     <groupId>ua.kpi</groupId>
     <artifactId>StudyKPI</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>Study KPI</name>
+
     <build>
         <plugins>
             <plugin>
@@ -25,7 +29,7 @@
         <module>guessGame</module>
         <module>flower_shop</module>
         <module>notebook</module>
-        <module>myArrayLlist</module>
+        <module>myArrayList</module>
         <module>GoFpatterns</module>
         <module>car</module>
         <module>webApp</module>

@@ -8,17 +8,25 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/Servlet")
+@WebServlet(urlPatterns = "/Servlet", name = "Servlet")
 public class Servlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        response.getWriter().println(firstName + " " + lastName);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=utf-8");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        System.out.println(firstName + " " + lastName);
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("Works.");
+        out.println("First name: " + firstName + "; Last Name: " + lastName);
         out.println("</body></html>");
+        out.close();
     }
 }
